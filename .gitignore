@@ -7,12 +7,15 @@ __pycache__/
 
 # Local env files
 .env
+.env.*
 
 # Local data
 training_submissions.txt
 
-# Node
+# Frontend
 node_modules/
+dist/
+coverage/
 
 # OS
 .DS_Store
