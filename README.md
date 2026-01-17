@@ -30,6 +30,12 @@ uvicorn main:app --host 127.0.0.1 --port 4000
 - Build command: `pip install -r requirements.txt`
 - Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
 - CORS: `https://revel8.cloud` is allowed by default; add more via `ALLOWED_ORIGINS`
+- S3 env vars (for storage on Render):
+  - `AWS_ACCESS_KEY_ID`
+  - `AWS_SECRET_ACCESS_KEY`
+  - `AWS_REGION`
+  - `S3_BUCKET`
+  - Optional: `S3_PREFIX` (defaults to `submissions/`)
 
 ## Render deployment (frontend + backend)
 - Use `render.yaml` to provision both services.
